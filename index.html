@@ -1,47 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      background-image: url('Madagascar_2019_CG-0118.jpg'); 
+      background-size: cover;
+      background-position: center 15%;
+      height: 100vh;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      /*background-color: rgba(0, 0, 0, 0.4); /* Adds dark overlay */
+    }
+
+    .navbar {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .navbar img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      max-width: 600px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px; /* Adds spacing between h1, p, and button */
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+
+    .cta-button {
+      background-color: #1b3061; /* Dark blue */
+      color: white;
+      padding: 24px 50px;
+      border: none;
+      border-radius: 6px;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background-color: #06122e;
+    }
+
+    @media (max-width: 600px) {
+      .hero-text h1 {
+        font-size: 1.8rem;
+      }
+
+      .hero-text p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <div class="top-border"></div>
+  <div class="hero">
+    <div class="overlay"></div>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+    <div class="navbar">
+      <img src= "jerry_can_yellow.png" alt="charity: water logo">
+      charity: water
+    </div>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+    <div class="hero-text">
+      <h1>Bring Clean Water to Life. Give Families a Future.</h1>
+      <p>Support clean water projects that empower communities, improve health, and create opportunity — all in line with your values.</p>
+      <a href="#donate-now" class="cta-button">Donate Now</a>
+    </div>
+  </div>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
 </body>
 </html>
